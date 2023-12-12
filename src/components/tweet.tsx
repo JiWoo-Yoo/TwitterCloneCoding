@@ -27,11 +27,11 @@ const Photo = styled.img`
   border-radius: 15px;
 `;
 
-export default function Tweet({ username, photo, tweet }: ITweet) {
+export default function Tweet({ user, photo, tweet }: ITweet) {
   return (
     <Wrapper>
       <Column>
-        <Username>{username}</Username>
+        <Username>{user}</Username>
         <Payload>{tweet}</Payload>
       </Column>
       {photo ? (
